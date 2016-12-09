@@ -1,0 +1,14 @@
+<h1>Dashboard</h1>
+
+<table>
+    <thead>
+    
+    </thead>
+    <tbody>
+        <tr ng-repeat="food in foods track by $index">
+            <td ng-bind="food.name"></td>
+            <td ng-bind="food.count"></td>
+            <td><button ng-click="takeFood(food)" ng-if="food.count>0">Take</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+<div ng-repeat="food in foods track by $index" ng-bind="food"></div>
+
+<form ng-submit="addFood()">
+    <input type="text" ng-model="newFood">
+    <input type="submit">
+</form>
